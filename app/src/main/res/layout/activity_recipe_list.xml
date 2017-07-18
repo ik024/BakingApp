@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ik.bakingapp.recipeList.RecipeListActivity">
+
+    <include android:id="@+id/layout_offline"
+        layout="@layout/offline_layout"
+        android:visibility="gone"/>
+
+    <fragment
+        android:id="@+id/fragment_recipe_list"
+        class="com.ik.bakingapp.recipeList.RecipeListFragment"
+        android:name="com.ik.bakingapp.recipeList.RecipeListFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout="@layout/fragment_recipe_list"/>
+
+</RelativeLayout>
